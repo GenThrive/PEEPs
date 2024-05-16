@@ -69,7 +69,7 @@ def merge_with_controlled_terms(df, controlled_terms_df, table_name, column_name
 
     # Drop merge column and fill NaN with 'No Data'
     merged_df = merged_df.drop(columns=['merge'])
-    merged_df = merged_df.fillna('No Data Entered')
+    # merged_df = merged_df.fillna('No Data Entered')
 
     return merged_df
 
