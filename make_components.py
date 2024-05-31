@@ -68,7 +68,7 @@ def build_directory_table(table_id, df, directory_dataframe=None, directory_tabl
                     sort_mode="multi",
                     page_action="native",
                     page_current= 0,
-                    page_size= 5,
+                    page_size= 10,
                     css=[{'selector': '.row', 'rule': 'margin: 0; flex-wrap: nowrap'},
                         {'selector':'.export','rule':'position:absolute;left:0px;bottom:-35px'}],
                     fixed_columns={'headers': True, 'data': 1},

@@ -271,8 +271,10 @@ def store_data(*vals):
     store_dict['Programs']['data'] = programs_df.to_dict('records')
 
     # Add record count to tab label
-    tab_orgs_label = 'Organization Records (' + str(len(org_df)) + ')'
-    tab_programs_label = 'Program Records ('  + str(len(programs_df)) + ')'
+    # tab_orgs_label = 'Organization Records (' + str(len(org_df)) + ')'
+    tab_orgs_label = 'Organization Records'
+    # tab_programs_label = 'Program Records ('  + str(len(programs_df)) + ')'
+    tab_programs_label = 'Program Records'
 
 #---------------
     # map_orgs = pd.DataFrame(store_dict['Organizations']['data'])
@@ -364,7 +366,8 @@ def build_barchart(data, input_barchart):
         bar_data = bar_data.groupby(bar_data.columns[3]).agg({'Count': 'sum'}).reset_index()
         cols = list(bar_data.columns)
         bar_data.columns = [col.replace('_y','') for col in cols]
-        bar_title = "{} (grouped by {})".format(bar_data.columns[0], title_group)
+        # bar_title = "{} (grouped by {})".format(bar_data.columns[0], title_group)
+        bar_title = "{}".format(bar_data.columns[0], title_group)
         bar_chart = make_bar(bar_data, 0, 1, layout_direction = 'v', marker_color=eco_color, title = bar_title, ascending=False)
         return  bar_chart
     except:
@@ -393,7 +396,8 @@ def build_piechart(data, input_piechart):
         cols = list(pie_data.columns)
         pie_data.columns = [col.replace('_y','') for col in cols]
         name_col, value_col = pie_data.columns[0], pie_data.columns[1]
-        pie_title = "{} (grouped by {})".format(name_col, title_group)
+        # pie_title = "{} (grouped by {})".format(name_col, title_group)
+        pie_title = "{}".format(name_col, title_group)
 
         # Set label type from pie_chart
         # use try / except to use the value from pie_format if it works, else just use the textinfo = None
@@ -426,7 +430,8 @@ def build_barchart(data, input_barchart):
         bar_data = bar_data.groupby(bar_data.columns[3]).agg({'Count': 'sum'}).reset_index()
         cols = list(bar_data.columns)
         bar_data.columns = [col.replace('_y','') for col in cols]
-        bar_title = "{} (grouped by {})".format(bar_data.columns[0], title_group)
+        # bar_title = "{} ed by {})".format(bar_data.columns[0], title_group)
+        bar_title = "{}".format(bar_data.columns[0], title_group)
         bar_chart = make_bar(bar_data, 0, 1, layout_direction = 'h', marker_color=eco_color, title = bar_title, ascending=True)
         return  bar_chart
     except:
