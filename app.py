@@ -81,6 +81,7 @@ dashboard = html.Div([
                     ),
         ],width=12, xl=6),
     ],
+    style={'padding': '20px'}  # Adjust the padding value as needed
     ),
     dbc.Row([
         dbc.Col([
