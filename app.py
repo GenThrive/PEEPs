@@ -177,7 +177,7 @@ app.layout = html.Div([sidebar, content])
 # Callbacks
 # ----------------------------------------------------------------------------
 
-##TODO: Add a datastore to hold filtered data! Use as state for the figures
+#TODO: Add a datastore to hold filtered data! Use as state for the figures
 @app.callback(Output('store-data', 'data'),
         Output('tab-org','label'), Output('tab-pg','label'),
         Output('test_div','children'),
@@ -272,10 +272,10 @@ def store_data(*vals):
     store_dict['Programs']['data'] = programs_df.to_dict('records')
 
     # Add record count to tab label
-    # tab_orgs_label = 'Organization Records (' + str(len(org_df)) + ')'
-    tab_orgs_label = 'Organization Records'
-    # tab_programs_label = 'Program Records ('  + str(len(programs_df)) + ')'
-    tab_programs_label = 'Program Records'
+    tab_orgs_label = 'Organization Records (' + str(len(org_df)) + ')'
+    # tab_orgs_label = 'Organization Records'
+    tab_programs_label = 'Program Records ('  + str(len(programs_df)) + ')'
+    # tab_programs_label = 'Program Records'
 
 #---------------
     # map_orgs = pd.DataFrame(store_dict['Organizations']['data'])
