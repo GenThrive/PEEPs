@@ -195,7 +195,7 @@ def make_bar(df, category_col_index, count_col_index, show_category = True, layo
 
 def make_map(orgdata, lat_col, lon_col, choro_geojson,  featureidkey, choro_df, choro_df_location, choro_df_value, map_center_lat, map_center_lon, map_zoom = 5, hover_name = "Organization", hover_data = None):
     # Design point layer
-    scatter_fig_hover_template = '<b>%{hovertext}</b><br>Education Service Center: %{customdata[0]} <br>Region: %{customdata[1]}'
+    scatter_fig_hover_template = '<b>%{hovertext}</b><br>Education Service Center: %{customdata[0]}'
     scatter_fig = px.scatter_mapbox(orgdata, lat=lat_col, lon=lon_col,
                              hover_name=hover_name, hover_data=hover_data)
     scatter_fig.update_traces(hovertemplate=scatter_fig_hover_template)
