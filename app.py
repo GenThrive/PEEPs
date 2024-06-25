@@ -398,7 +398,7 @@ def build_piechart(data, input_piechart):
         pie_data.columns = [col.replace('_y','') for col in cols]
         name_col, value_col = pie_data.columns[0], pie_data.columns[1]
         # pie_title = "{} (grouped by {})".format(name_col, title_group)
-        pie_title = "{}".format(name_col, title_group)
+        pie_title = "{}".format(name_col)
 
         # Set label type from pie_chart
         # use try / except to use the value from pie_format if it works, else just use the textinfo = None
