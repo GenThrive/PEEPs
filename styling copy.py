@@ -17,7 +17,7 @@ map_zoom = 4
 # Column in the dataset that maps to the featureidkey of the geojson.
 # This is what maps the data column to the geojson feature
 # For Texas this is the column that  definse the area category of the ESC
-geojson_featureidkey='properties.FID'
+geojson_featureidkey='properties.OBJECTID'
 data_area_col = 'ESC'
 
 # ----------------------------------------------------------------------------

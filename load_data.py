@@ -25,12 +25,13 @@ data_filepath = pathlib.Path(__file__).parent.absolute()
 data_dictionary_filepath = os.path.join(data_filepath,'data','data_dictionary.xls')
 data_records_filepath = os.path.join(data_filepath,'data','data_records.xls')
 us_states_geojson = os.path.join(data_filepath,'data','us_state_geojson.txt')
-tx_esc_geojson = os.path.join(data_filepath,'data','tx_esc.geojson')
+# tx_esc_geojson = os.path.join(data_filepath,'data','tx_esc.geojson')
+peeps_esc_geojson = os.path.join(data_filepath,'data','peeps_esc.geojson')
 
 # LOAD FILES
 # geojson file
-with open(tx_esc_geojson) as tx:
-    tx_esc = json.load(tx)
+with open(peeps_esc_geojson) as tx:
+    peeps_esc = json.load(tx)
 
 with open(us_states_geojson) as response:
     states = json.load(response)
