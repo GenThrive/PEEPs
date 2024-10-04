@@ -1,8 +1,8 @@
 # ----------------------------------------------------------------------------
 # PAGE SETTINGS
 # ----------------------------------------------------------------------------
-app_title = 'PEEPs Dashboard - 2024'
-page_title = 'PEEPs 2024'
+app_title = 'PEEPs Environmental Education Directory'
+page_title = 'PEEPs Environmental Education Directory'
 sub_title = 'Filter on'
 filter_category_1 = 'Organization Data'
 filter_category_2 = 'Program Data'
@@ -25,9 +25,12 @@ data_area_col = 'ESC'
 # ----------------------------------------------------------------------------
 
 # Set Color scales for Figures using the EcoRise brande color palette
-fulltint = ['#00A887','#B9D535','#FFC600','#FF8F12','#FF664B']
-tint_75 = ['#40BEA5','#CBE068','#FFC400','#FFAB4D','#FF8C78']
-tint_50 = ['#80D4C3','#DCEA9A','#FFE380','#FFC789','#FFB3A5']
+# fulltint = ['#00A887','#B9D535','#FFC600','#FF8F12','#FF664B']
+# tint_75 = ['#40BEA5','#CBE068','#FFC400','#FFAB4D','#FF8C78']
+# tint_50 = ['#80D4C3','#DCEA9A','#FFE380','#FFC789','#FFB3A5']
+fulltint = ['#098096','#2BB673','#F2C318','#58595B','#004c7B']
+tint_75 = ['#0B97B3','#32D288','#FFD21A','#767779','#005A97']
+tint_50 = ['#0DAFD0','#39EF9A','#FFE380','#919395','#006CB3']
 eco_color = fulltint + tint_75 + tint_50
 eco_color_r = fulltint[::-1] + tint_75[::-1] + tint_50[::-1]
 eco_color_desc = eco_color[::-1]
