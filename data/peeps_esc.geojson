@@ -11,7 +11,7 @@
 
       "properties": {
         "OBJECTID": 1,
-        "REGION": "01",
+        "REGION": "1",
         "STATE": "Colorado",
         "density": 2009.33,
         "code": "CO",
@@ -50,7 +50,7 @@
       "id": "19",
       "properties": {
         "OBJECTID": 2,
-        "REGION": "02",
+        "REGION": "2",
         "STATE": "Iowa",
         "density": 54.81,
         "code": "IA"
@@ -120,7 +120,7 @@
       "id": "20",
       "properties": {
         "OBJECTID": 3,
-        "REGION": "03",
+        "REGION": "3",
         "STATE": "Kansas",
         "density": 35.09,
         "code": "KS"
@@ -153,7 +153,7 @@
       "id": "29",
       "properties": {
         "OBJECTID": 4,
-        "REGION": "04",
+        "REGION": "4",
         "STATE": "Missouri",
         "density": 87.26,
         "code": "MO"
@@ -226,7 +226,7 @@
       "id": "31",
       "properties": {
         "OBJECTID": 5,
-        "REGION": "05",
+        "REGION": "5",
         "STATE": "Nebraska",
         "density": 23.97,
         "code": "NE"
@@ -275,7 +275,7 @@
       "id": "56",
       "properties": {
         "OBJECTID": 6,
-        "REGION": "06",
+        "REGION": "6",
         "STATE": "Wyoming",
         "density": 5.851,
         "code": "WY"
